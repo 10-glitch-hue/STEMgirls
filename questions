@@ -1,0 +1,58 @@
+let questions = [
+    {
+        numb: 1,
+        question: "Who was the first woman to win a Nobel Prize?",
+        answer: "1. Marie Curie",
+        options: [
+            "1. Marie Curie",
+            "2. Ada Lovelace",
+            "3. Katherine Johnson",
+            "4. Rosalind Franklin"
+        ]
+    },
+    {
+        numb: 2,
+        question: "Who was the first woman to go to space?",
+        answer: "2. Valentina Tereshkova",
+        options: [
+            "1. Mae Jemison",
+            "2. Valentina Tereshkova",
+            "3. Eileen Collins",
+            "4. Anousheh Ansari"
+
+        ]
+    },
+{
+        numb: 3,
+        question: "Who is credited for the idea that led to the creation of Wi-Fi?",
+        answer: "4. Hedy Lamarr",
+        options: [
+            "1. Ruth Lichterman Teitelbaum",
+            "2. Grace Hopper",
+            "3. Radia Perlman",
+            "4. Hedy Lamarr"
+        ]
+    },
+{
+        numb: 4,
+        question: "Who is known as the 'First Lady of Physics'?",
+        answer: "1. Chien-Shiung Wu",
+        options: [
+            "1. Chien-Shiung Wu",
+            "2. Ruby Scott-Payne",
+            "3. Vera Rubin",
+            "4. Michelle Simmons"
+        ]
+    },
+{
+        numb: 5,
+        question: "Who invented the first-ever illusion transmitter",
+        answer: "3. Valerie Thomas",
+        options: [
+            "1. Margaret Hamilton",
+            "2. Adele Goldberg",
+            "3. Valerie Thomas",
+            "4. Susan Wojcicki"
+        ]
+    }
+]

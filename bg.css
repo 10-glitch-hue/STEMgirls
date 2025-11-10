@@ -1,0 +1,545 @@
+﻿.body {
+	font-family: "Javanese Text";
+	font-size:large
+}
+
+.newStyle1 {
+background-image:url('../../../Downloads/1920 x 1080 pink laptop wallpaper!.jpeg')
+}
+.container {
+	display: flex;
+	/* stack sections vertically so the "footer" (buttons) appears under the text */
+	flex-direction: column;
+	align-items: center;
+	height: auto; /* let content determine height */
+	width: 100%; /* prevent horizontal overflow */
+	box-sizing: border-box;
+	text-align: center; /* center-align text inside the main container */
+}
+
+/* Ensure direct section children take full width so content flows vertically */
+.container > section {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.mycontainer {
+	width:100%;
+	display:flex;
+}
+.mycontainer div {
+	flex: 1;
+	padding:10px;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+}
+
+.mybox {
+	width:100%;
+	overflow:auto;
+}
+
+
+.mybox div {
+	width:50%;
+	float:left;
+}
+
+
+.auto-style1 {
+	text-align: center;
+	font-family: "Edwardian Script ITC";
+	font-size: 84px;
+	color:#FFCCFF;
+}
+.auto-style3 {
+	text-align:center;
+	font-family: "Edwardian Script ITC";
+	font-size: 64px;
+	color:#6D80CE;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  
+}
+
+.main.active {
+	filter: blur(10px);
+	pointer-events: none;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	/* fall-back / kept for compatibility - flex-direction handled earlier */
+}
+
+h2, p {
+  margin: 10px;
+}
+
+.bg {
+	background-image:url('bc9b0797-daff-40cb-882f-e746e0e81d89_imgupscaler.ai_v1(Fast)_2K.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center	
+}
+.mytable {
+    width: 600px;             /* total table width */
+    height: 300px;            /* total table height */
+    border-collapse: collapse;/* cleaner borders */
+    table-layout: fixed;      /* ensures fixed column width */
+}
+
+.mytable td {
+    border: 1px solid #333;   /* visible cell borders */
+    width: 50%;               /* equal columns (2 columns = 50% each) */
+    height: 100px;            /* equal row height (300px / 3 rows = 100px each) */
+    text-align: center;       /* center text horizontally */
+    vertical-align: middle;   /* center text vertically */
+}
+
+.start-btn {
+	background-color:#FFFFFF;
+	color:#FFCCFF;
+	border-color:#FFCCFF;
+	cursor:pointer;
+	text-align:center
+
+}
+
+.start-btn:hover {
+    background-color:#C8D9E6;
+    color:white
+}
+
+.popup-info {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.9);
+    width:500px;
+    background-image:url(download\ \(13\).jpeg);
+    border-radius: 6px;
+    padding:20px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+	transition: .3s ease;
+	
+}
+
+.popup-info.active {
+	opacity: 1;
+	pointer-events: auto;
+	 transform: translate(-50%, -50%) scale(1);
+
+}
+.popup-info h2 {
+	font-size: 50px;
+	color:#FFCCFF;
+	text-align:center;
+}
+
+.popup-info .info {
+	display:inline-block;
+	font-size:16px;
+	color:#2F4156;
+	font-weight: 500;
+	margin:4px 0;
+}
+
+.popup-info .btn-group {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top:1px solid white;
+	margin-top:10px;
+	padding:15px 0 7px;
+}
+
+.popup-info .btn-group .info-btn {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+	width: 130px;
+	height: 45px;
+	background:#FFCCFF;
+	border: 2px solid white;
+	outline: none;
+	border-radius: 6px;
+	text-decoration:none;
+	font-size:16px;
+	color:white;
+	font-weight:600;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	cursor:pointer;
+	font-family:"Javanese Text";
+	
+}
+.popup-info .btn-group .info-btn.exit-btn {
+    background:transparent;
+    color:#FFCCFF;
+}
+
+.popup-info .btn-group .info-btn.exit-btn:hover {
+	background:#FFCCFF;
+	color:white;
+}
+
+.popup-info .btn-group .info-btn.continue-btn:hover {
+	background:#FFB7FF;
+	color:white;
+}
+
+.quiz-section {
+	flex: 1;
+	display: flex;
+	/* stack quiz content vertically so footer appears below the questions */
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: "Javanese Text";
+	background: linear-gradient(45deg, transparent, #6D80CE, transparent);
+	padding: 40px 0; /* space below the nav/header */
+}
+
+.quiz-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+.quiz-section .quiz-box {
+	position: relative;
+	max-width: 900px;
+	width: calc(100% - 40px);
+	margin: 24px auto; /* space around the card */
+	background: #ffffff;
+	color: #2F4156;
+	padding: 24px;
+	border-radius: 8px;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.quiz-box h1 {
+	font-size: 58px;
+	color: darkslateblue;
+	font-family: "edwardian script itc";
+	text-align: center;
+	background: linear-gradient(45deg, transparent, #FFCCFF, transparent);
+	border-radius: 6px;
+}
+
+.quiz-box .quiz-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+	border-bottom: 2px solid #FFCCFF ;
+	margin-top: 20px;
+}
+
+.quiz-header span {
+	font-size: 18px;
+	font-weight: 500;
+	color: darkslateblue;
+}
+
+.quiz-header .header-score {
+	background: #FFCCFF;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.quiz-box .question-text {
+	font-size: 24px;
+	font-weight: 600;
+	color: darkslateblue;
+}
+
+.option-list .option {
+	/* keep this selector for any lists that use .option-list */
+	width: 100%;
+	box-sizing: border-box; /* include padding/border in width calculations */
+	padding: 12px;
+	background: transparent;
+	border: 2px solid rgba(255, 189, 249, 0.952);
+	border-radius: 3px;
+	font-size: 17px;
+	margin: 15px 0; /* vertical spacing only so it doesn't overflow horizontally */
+	cursor: pointer;
+	transition: .3s;
+}
+
+
+/* Generic rule for option blocks placed directly inside the quiz card */
+.quiz-box .option {
+	width: 100%;
+	box-sizing: border-box; /* ensures borders/padding don't increase total width */
+	padding: 12px;
+	background: transparent;
+	border: 2px solid rgba(255, 189, 249, 0.952);
+	border-radius: 3px;
+	font-size: 17px;
+	color: darkslateblue;
+	margin: 12px 0; /* vertical spacing only */
+	cursor: pointer;
+}
+
+.option-list .option:hover {
+	background: #edecec;
+	border-color: #ffa5fc;
+}
+
+/* Feedback states for options */
+.option.correct {
+	border-color: #28a745 !important; /* green */
+	color: #28a745 !important;
+	background: rgba(40,167,69,0.06);
+}
+.option.incorrect {
+	border-color: #dc3545 !important; /* red */
+	color: #dc3545 !important;
+	background: rgba(220,53,69,0.04);
+}
+.option.disabled {
+	pointer-events: none;
+	opacity: 0.95;
+}
+
+.quiz-box .quiz-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 2px solid #FFCCFF;
+	padding-top: 20px;
+	margin-top: 25px;
+}
+
+.quiz-footer .question-total {
+	font-size: 16px;
+	font-weight: 600;
+	color: darkslateblue;
+}
+
+.quiz-footer .next-btn {
+	width: 100px;
+	height: 45px;
+	background: #FFCCFF;
+	border: 2px solid white;
+	outline: none;
+	border-radius: 6px;
+	font-size: 16px;
+	color: thistle;
+	font-weight: 600;
+	cursor: pointer;
+	
+	transition: .5s;
+	position: relative; /* allow z-index to take effect if needed */
+	z-index: 2;
+}
+
+.quiz-footer .next-btn:hover {
+	background: #FF77CC; /* stronger contrast on hover */
+	border-color: #FF77CC; /* set border color properly */
+	color: white; /* make text readable on hover */
+}
+
+.quiz-section .result-box {
+	/* hidden by default; shown when .show applied */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	background: white;
+	border: 2px solid #FFCCFF;
+	border-radius: 6px;
+	padding: 20px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+}
+
+.result-box.show {
+    display: flex;
+    position: fixed; /* lift out of flow so it's above blurred content */
+    z-index: 10002;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* full-page backdrop behind the result box */
+.result-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+}
+.result-backdrop.show {
+    display: block;
+}
+
+.main.blurred {
+    filter: blur(8px);
+}
+
+.result-box h2 {
+	/* kept for compatibility if an h2 remains; smaller size since title is overlayed */
+	font-size: 28px;
+	color: #6D80CE;
+	margin: 0 0 8px 0;
+}
+
+.result-box .percentage-container {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0 16px;
+	position: relative; /* allows title overlay */
+}
+
+.percentage-container .circular-progress {
+	position:relative;
+	width: 200px; /* slightly smaller */
+	height: 200px; /* slightly smaller */
+	background: conic-gradient(white 3.6deg, #FF77CC 0deg);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-title {
+	position: absolute;
+	top: 18px; /* positions title on top area of the circle */
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 2;
+	font-size: 20px;
+	color: #FF77CC;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+.circular-progress .progress-value {
+	font-size: 36px;
+	font-weight: 600;
+	color: #6D80CE;
+}
+
+.percentage-container .score-text {
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 14px;
+	color: #6D80CE;
+	text-align: center;
+}
+
+.buttons2 {
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	margin-top: 12px;
+}
+
+.buttons2 button {
+	width: 140px;
+	height: 44px;
+	background: #FFCCFF;
+	border: 2px solid #FFCCFF;
+	outline: none;
+	border-radius: 6px;
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	font-weight: 700;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+	cursor: pointer;
+	font-family: "Javanese Text";
+	transition: .18s ease;
+}
+
+.buttons2 button:hover {
+	background: #e673c9; /* darker on hover */
+	border-color: #e673c9;
+	transform: translateY(-3px);
+}
+
+.contact-section {
+  background-color:#5F7CD7;/* your purple background */
+  padding: 80px 0;           /* space above and below your boxes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact-section .person {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center
+}
+
+.people-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 200px; /* space between boxes */
+  flex-wrap: wrap; /* makes them stack on small screens */
+}
+
+.person-box {
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+  width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.person-box h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.person-box a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.person-box a:hover {
+  text-decoration: underline;
+}
+
+.what-box {
+	padding:20px;
+	border: 2px #FFCCFF solid;
+	box-shadow:  0 0 10px rgba(0,0,0,.1);
+	text-align:center;
+	width:75%;
+	margin:50px auto;
+	
+}
+
