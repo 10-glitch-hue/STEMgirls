@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         main && main.classList.remove('active');
     });
 
+   
     let questionCount = 0; // zero-based index
     let score = 0;
     const MAX_SCORE = 5; // display score out of 5
@@ -103,15 +104,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function optionSelected(answer, optionElems, correctAnswer){
         const userAnswer = answer.textContent && answer.textContent.trim();
-        // mark selected answer
+        
         if (userAnswer === correctAnswer) {
             answer.classList.add('correct');
-            // increment score (clamp to MAX_SCORE)
+            
             score = Math.min(MAX_SCORE, score + 1);
             if (headerScore) headerScore.textContent = `Score: ${score}/${MAX_SCORE}`;
         } else {
             answer.classList.add('incorrect');
-            // highlight the correct one as well
+            
             const correctElem = Array.from(optionElems).find(el => el.textContent && el.textContent.trim() === correctAnswer);
             if (correctElem) correctElem.classList.add('correct');
         }

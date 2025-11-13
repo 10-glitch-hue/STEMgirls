@@ -84,7 +84,7 @@ h2, p {
 }
 
 .bg {
-	background-image:url('bc9b0797-daff-40cb-882f-e746e0e81d89_imgupscaler.ai_v1(Fast)_2K.jpg');
+	background-image:url(background.jpg);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-size:cover;
@@ -195,6 +195,99 @@ h2, p {
 }
 
 .popup-info .btn-group .info-btn.continue-btn:hover {
+	background:#FFB7FF;
+	color:white;
+}
+
+.start-btn2 {
+	background-color:#FFFFFF;
+	color:#FFCCFF;
+	border-color:#FFCCFF;
+	cursor:pointer;
+	text-align:center
+
+}
+
+.start-btn2:hover {
+    background-color:#C8D9E6;
+    color:white
+}
+
+.popup-info2 {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(.9);
+    width:500px;
+    background-image:url(download\ \(13\).jpeg);
+    border-radius: 6px;
+    padding:20px;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+	transition: .3s ease;
+	
+}
+
+.popup-info2.active {
+	opacity: 1;
+	pointer-events: auto;
+	 transform: translate(-50%, -50%) scale(1);
+
+}
+.popup-info2 h2 {
+	font-size: 50px;
+	color:#FFCCFF;
+	text-align:center;
+}
+
+.popup-info2 .info {
+	display:inline-block;
+	font-size:16px;
+	color:#2F4156;
+	font-weight: 500;
+	margin:4px 0;
+}
+
+.popup-info2 .btn-group2 {
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top:1px solid white;
+	margin-top:10px;
+	padding:15px 0 7px;
+}
+
+.popup-info2 .btn-group2 .info-btn2 {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+	width: 130px;
+	height: 45px;
+	background:#FFCCFF;
+	border: 2px solid white;
+	outline: none;
+	border-radius: 6px;
+	text-decoration:none;
+	font-size:16px;
+	color:white;
+	font-weight:600;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	cursor:pointer;
+	font-family:"Javanese Text";
+	
+}
+.popup-info2 .btn-group2 .info-btn2.exit-btn2 {
+    background:transparent;
+    color:#FFCCFF;
+}
+
+.popup-info2 .btn-group2 .info-btn2.exit-btn2:hover {
+	background:#FFCCFF;
+	color:white;
+}
+
+.popup-info2 .btn-group2 .info-btn2.continue-btn2:hover {
 	background:#FFB7FF;
 	color:white;
 }
@@ -482,8 +575,8 @@ h2, p {
 }
 
 .buttons2 button:hover {
-	background: #e673c9; /* darker on hover */
-	border-color: #e673c9;
+	background: #FFB7FF; /* darker on hover */
+	border-color: #ffffff;
 	transform: translateY(-3px);
 }
 
@@ -575,4 +668,245 @@ table.mytable img:hover {
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 	transform: translateY(-5px);
 }
+  
+/* --- Fix radio alignment --- */
+.question2 {
+      margin: 1.5rem 0;
+      background: #ffe6f2;
+      padding: 1rem;
+      border-radius: 1rem;
+    }
 
+.question2 input[type="radio"] {
+  accent-color: #ff99cc; /* 💖 optional: makes the radio pink! */
+}
+.result2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+      background: #fce4ec;
+      padding: 1rem;
+      border-radius: 1rem;
+      display: none;
+    }
+
+/* Strong reset for quiz option layout - put this at the end of your CSS */
+.quiz-box2,
+.quiz-box2 .container,
+.quiz-box2 form,
+.quiz-box2 .question2 {
+  /* ensure normal flow inside quiz */
+  position: relative;
+  z-index: 0;
+}
+
+/* Make each label keep radio and text on one line and vertically centered */
+.quiz-box2 .question2 label {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.6rem !important;
+  vertical-align: middle !important;
+  width: auto;
+  margin-bottom: 0.4rem;
+  cursor: pointer;
+}
+
+/* Force radio to behave like an inline element (not absolutely positioned) */
+.quiz-box2 .question2 input[type="radio"] {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  width: auto !important;
+  height: auto !important;
+  vertical-align: middle !important;
+  appearance: radio;
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  accent-color: #ff99cc !important; /* your pink radio */
+}
+
+/* Ensure long option text wraps normally and does not sit under the radio */
+.quiz-box2 .question2 label,
+.quiz-box2 .question2 label span {
+  white-space: normal !important;
+  line-height: 1.3 !important;
+}
+
+/* If you have any global rules that make every child positioned (e.g. * { position: relative; })
+   we neutralize their effect inside the quiz here */
+.quiz-box2 * {
+  position: static !important;
+}
+
+/* Optional: make the whole option area clickable and nicer spacing */
+.quiz-box2 .question2 label {
+  padding: 0.25rem 0.35rem;
+  border-radius: 6px;
+}
+.quiz-box2 .question2 label:hover {
+  background: rgba(255,153,204,0.06);
+}
+
+
+.quiz-box2 h1 {
+	font-size: 58px;
+	color: darkslateblue;
+	font-family: "edwardian script itc";
+	text-align: center;
+	background: linear-gradient(45deg, transparent, #FFCCFF, transparent);
+	border-radius: 6px;
+}
+
+.quiz-box2 h2 {
+	font-size: 26px;
+	color: darkslateblue;
+	font-family: "Javanese Text";
+	text-align: center;
+	margin-top: 10px;
+}
+
+/* Popup overlay styling */
+.popup-overlay2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000; /* 👈 ensures popup is on top */
+}
+
+/* Popup content box */
+.popup-content2 {
+  position: relative;
+  background: #fff;
+  color: #2F4156;
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: popupFade 0.3s ease-in-out;
+  z-index: 10001; /* 👈 keeps content above overlay */
+}
+
+/* Close button */
+.close-popup2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Fade-in animation */
+@keyframes popupFade {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Blur background when popup is active */
+main.blur {
+  filter: blur(8px);
+  pointer-events: none;
+  z-index: 1; /* 👈 makes sure it stays behind the popup */
+  position: relative;
+}
+
+footer {
+	width: 100%;
+	bottom: 0;
+	background: linear-gradient(to right, #6D80CE, #2F4156);
+	color:#FFB7FF;
+	padding: 50px 0 30px;
+	font-size: 15px;
+
+}
+
+.row {
+	width:85%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.col {
+	flex-basis: 25%;
+	padding: 10px;
+}
+
+.col h3 {
+	margin-bottom: 20px;
+	width:fit-content;
+	position: relative;
+}
+
+.col li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.col li a {
+	color: #FFB7FF;
+	text-decoration: none;
+}
+
+form input, form textarea {
+	width: 100%;
+	padding:10px;
+	background: white;
+	outline: none;
+	border: none;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ allows items to go to the next row */
+  justify-content: space-between; /* optional: adds space between boxes */
+  gap: 20px; /* optional: uniform spacing instead of margin-top */
+  padding: 50px;
+}
+
+.news-container .news-item {
+  flex: 1 1 calc(33.33% - 20px); /* ✅ makes 3 items per row with gap */
+  background-color: #2F4156;
+  color: #ffe6f2;
+  border: 2px solid #C8D9E6;
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* ✅ keeps content stacked inside each box */
+  align-items: flex-start;
+}
+.news-container .news-item:hover {
+  background-color: #C8D9E6;
+  color: #2F4156;
+  border: #2F4156;
+  transform: translateY(3px);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.news-container .news-item a{
+	text-decoration: none;
+	color: #ffe6f2;
+}
+
+.news-container .news-item a:hover{
+	color: #2F4156;
+}

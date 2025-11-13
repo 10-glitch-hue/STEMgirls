@@ -1,4 +1,4 @@
-﻿ul {
+﻿nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -7,18 +7,18 @@
   justify-content: space-between; /* spreads items across */
 }
 
-ul li {
+nav ul li {
   flex: 1; /* each <li> grows to take equal width */
   text-align: center; /* centers the text inside */
 }
 
-ul li a {
+nav ul li a {
   display: block;
   color: #FFFFFF;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #FF99CC;
 }
